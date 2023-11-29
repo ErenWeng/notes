@@ -14,6 +14,7 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --ifm-code-link-blue: #52D3F5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -26,6 +27,7 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-code-link-blue: #2D90AE;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -39,4 +41,26 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+
+.theme-doc-markdown h2 {
+  color: var(--ifm-color-primary);
+}
+
+.theme-doc-markdown > ul > li > p {
+  color: var(--ifm-color-primary-darker);
+  margin: 24px 0 4px;
+}
+
+.theme-doc-markdown > ul > li {
+  color: var(--ifm-color-primary-darker);
+}
+
+.theme-doc-markdown > ul > li > ul {
+  color: initial;
+}
+
+.theme-doc-markdown a {
+  color: var(--ifm-code-link-blue);
+  text-decoration: underline;
 }
